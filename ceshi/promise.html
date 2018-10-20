@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+
+<body>
+    333333333333
+    <script>
+        var arr = new Array();
+        console.dir(Array())
+        console.dir(new Array())
+
+        console.dir(Promise)
+
+        setTimeout(function () {
+            throw new Error('出错1')
+        })
+
+        var promise = new Promise(function (resolve, reject) {
+
+        })
+        console.log(promise)
+        // promise.catch(function (error) {
+        //     console.log(error)
+        // })
+
+        function a() {
+            var x = 1;
+            try {
+                console.log(x + y)
+            } catch (err) {
+                console.log(err)
+            }
+        }
+
+        a() // 'ReferenceError: y is not defined'
+    </script>
+
+
+
+</body>
+
+</html>
