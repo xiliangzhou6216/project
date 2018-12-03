@@ -31,6 +31,14 @@ module.exports = {
   },
   module: {
     rules: [
+      {   //把这个对象添加在里面
+        test: /\.less$/,
+        use: [
+          'style-loader',
+          { loader: 'css-loader', options: { importLoaders: 1 } },
+          'less-loader'
+        ]
+      },
       {
         test: /\.vue$/,
         loader: 'vue-loader',
