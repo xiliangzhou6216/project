@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			li{width: 100px;box-shadow:inset 10px 10px 10px blanchedalmond,10px 10px 10px paleturquoise; 
+			height: 50px;background:pink;margin: 10px;line-height: 50px;text-align: center;}
+			ul{list-style: none;display: -webkit-box;width:1000px; height: 70px;border: 10px solid white;margin: auto;}
+			span{font-weight: bold;color: red;font-size: 50px;text-shadow: 20px 0px  10px yellow;}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li><span>a</span></li>
+			<li><span>b</span></li>
+			<li><span>c</span></li>
+			<li><span>d</span></li>
+			<li><span>e</span></li>
+			<li><span>f</span></li>
+			<li><span>g</span></li>			
+		</ul>
+		
+		<audio src="" id='oa'>
+		温馨提示，中间不会显示，请更新浏览器
+		</audio>
+		
+		<script type="text/javascript">
+		  var ali=document.getElementsByTagName('li');
+		  var oa=document.getElementById('oa');
+		  var a=new Array();
+		  var a=['a','b','c','d','e','f','g'];
+			for (var i=0;i<ali.length;i++) {
+				ali[i].index=i;				
+				ali[i].onmouseover=function (){
+					oa.src='http://s8.qhimg.com/share/audio/piano1/'+a[this.index]+'4.mp3'
+				console.log(oa.src);
+				}
+			}
+		</script>
+	</body>
+</html>
